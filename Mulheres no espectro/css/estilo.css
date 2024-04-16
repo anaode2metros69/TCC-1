@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
 
 /* conteúdos do * e body são iniciados em todos os CSS */
 * {
@@ -84,7 +85,7 @@ body {
 .headline {
     margin-left: 10%;
     flex: 40%;
-    font-size: medium 
+    font-size: medium
 }
 
 
@@ -98,9 +99,9 @@ body {
 }
 
 .headline p {
-    color:#8250a3;
+    color: #8250a3;
     text-align: left;
-    
+
 }
 
 .contact-btn:hover {
@@ -115,15 +116,13 @@ body {
 }
 
 section {
-    display: inline-block;
-    margin-top: 80px;
-    /* border:1px solid black; */
-    margin-left: 5%;
-    margin-right: 5%;
+    background-color:rgb(235, 213, 225); 
     padding: 5%;
-    text-align: center;
-
+    text-align:center;
+   
+   
 }
+
 
 section h2 {
     width: 100%;
@@ -131,45 +130,31 @@ section h2 {
     margin: 0;
     font-family: 'times new roman', cursive;
     font-weight: bold;
-    color: #eb6cc0;
+    color: #8250a3;
+    text-align: center;
+
 }
 
-.servicos {
-    display: inline-block;
-    margin-top: 5%;
+
+.section p{
+    display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center;
+  font-size: 10px;
+    color:black ;
+
+  
+}   
+
+
+.coluna{
+    margin: 10px;
 }
 
-.card {
-    display: inline-block;
-    width: 30%;
-    padding: 20px;
-    margin: 1%;
-    border: 1px solid #796069;
-    border-radius: 10px;
-    cursor: pointer;
-}
 
-.texto-oculto {
-    display: none;
-}
 
-.card:hover {
-    background: #FF2978;
-    color: rgb(199, 44, 44);
-    padding: 40px;
-}
 
-.card:hover img {
-    display: none;
-}
-
-.card:hover .card-text {
-    display: none;
-}
-
-.card:hover .texto-oculto {
-    display: block;
-}
 
 footer {
     margin-top: 100px;
@@ -187,4 +172,28 @@ footer {
     font-family: 'Lobster', cursive;
     color: #9894ea;
     font-size: 34px;
+}
+.col-100 {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px; /* Ajuste conforme necessário */
+}
+
+.slider-principal {
+    display: flex;
+    width: 400%; /* Largura total das imagens */
+    animation: carousel-scroll 10s linear infinite; /* Ajuste a duração conforme necessário */
+}
+
+.slider-principal img {
+    width: 25%; /* Largura de cada imagem */
+}
+
+@keyframes carousel-scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-300%); /* Ajuste o valor de acordo com o número de imagens */
+    }
 }
